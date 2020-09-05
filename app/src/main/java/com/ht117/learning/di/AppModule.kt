@@ -17,12 +17,4 @@ class AppModule(private val app: Application) {
     @Provides
     fun provideContext(): Context =
         app
-
-    @Provides
-    fun provideDataResource(): DataResource =
-        DataResource()
-
-    @Provides
-    fun provideOtherResource(): OtherResource =
-        OtherResource()
 }

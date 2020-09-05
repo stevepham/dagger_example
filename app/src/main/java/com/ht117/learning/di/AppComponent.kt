@@ -5,11 +5,8 @@ import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [AppModule::class])
+@Component(modules = [AppModule::class, ResourceModule::class])
 interface AppComponent {
 
-    /*
-     * @param: activity require resources
-     */
     fun inject(activity: HomeActivity)
 }
